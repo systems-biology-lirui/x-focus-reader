@@ -12,6 +12,8 @@
 
 **权限。**`storage` 权限用于保存在本机的推文清单。扩展仅在 `x.com` 和 `twitter.com` 页面运行内容脚本，以识别用户主动拖动的推文并显示专注界面。
 
+**有限用途。**通过 Chrome 扩展权限取得的信息仅用于上述单一功能。我们对这些信息的使用遵守 Chrome Web Store User Data Policy，包括其中的 Limited Use 要求。
+
 **删除。**用户可以在专注模式中逐条移除推文。卸载扩展会删除其本地存储数据。关闭标签页会结束该标签页的专注模式会话。
 
 **联系。**有关隐私问题，可以通过 [GitHub 主页](https://github.com/systems-biology-lirui) 联系开发者。
@@ -25,6 +27,8 @@
 **Storage and sharing.** This data stays in Chrome extension local storage and tab session storage on the user's device. The extension has no developer-operated server, analytics, or advertising code, and does not send collected posts to the developer or third parties. Opening a post's detail page navigates the browser to X, which handles that visit under its own policies.
 
 **Permissions.** The `storage` permission saves the local post collection. Content scripts run only on `x.com` and `twitter.com` to identify posts the user actively drags and to display the focused view.
+
+**Limited use.** Information obtained through Chrome extension permissions is used only for the single purpose described above. Our use of this information complies with the Chrome Web Store User Data Policy, including its Limited Use requirements.
 
 **Deletion.** Users can remove posts individually in focus mode. Uninstalling the extension removes its local storage. Closing the tab ends that tab's focus-mode session.
 
