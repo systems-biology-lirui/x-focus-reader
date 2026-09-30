@@ -1,11 +1,21 @@
 {
   "manifest_version": 3,
   "name": "X 专注阅读",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Ctrl 拖动收集推文，在专注模式中阅读 X 原生详情和评论。",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "permissions": ["storage"],
   "action": {
-    "default_title": "打开 X 专注阅读"
+    "default_title": "打开 X 专注阅读",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
   },
   "commands": {
     "toggle-focus": {
