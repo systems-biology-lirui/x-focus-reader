@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "X 专注阅读",
+  "version": "2.1.0",
+  "description": "Ctrl 拖动收集推文，在专注模式中阅读 X 原生详情和评论。",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "打开 X 专注阅读"
+  },
+  "commands": {
+    "toggle-focus": {
+      "suggested_key": { "default": "Ctrl+Shift+X" },
+      "description": "打开或关闭专注阅读模式"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "css": ["focus.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
